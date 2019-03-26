@@ -18,7 +18,7 @@ export const AppLogo = styled.img`
   pointer-events: none;
 `;
 export const AppHeader = styled.div`
-  background-color: #282c34;
+  background-color: black;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
