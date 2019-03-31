@@ -11,7 +11,7 @@ class App extends Component<{}, {}> {
         <AppHeader>
           <AppLogo src={logo} alt="logo" />
           <p>
-            Edit <code>src/App.tsx</code> and save to reload.
+            Edit <code>src/App.tsx</code> and save to reload
           </p>
           <AppLink
             className="App-link"
