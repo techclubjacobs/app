@@ -6,6 +6,8 @@ import FilterButton from "./components/FilterButton";
 import DropDownFilter from "./components/DropDownFilter";
 import CheckboxFilter from "./components/CheckboxFilter";
 import YearPickerFilter from "./components/YearPickerFilter";
+import GridCard from "./components/GridCard";
+import ListCard from "./components/ListCard";
 
 class App extends Component<{}, {}> {
   public render() {
@@ -30,6 +32,12 @@ class App extends Component<{}, {}> {
         <FilterButton title='college'>
           <CheckboxFilter options={['krupp', 'merc', 'c3', 'nord']} />
         </FilterButton>
+
+        <div>
+          <GridCard />
+          <br />
+          <ListCard />
+        </div>
       </AppWrapper>
     );
   }
