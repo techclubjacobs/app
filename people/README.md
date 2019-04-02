@@ -1,5 +1,22 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Getting started
+
+Install node (https://nodejs.org/en/):
+
+```
+sudo apt-get install nodejs npm
+```
+
+If you run into any problems, try running
+
+```
+sudo apt-get install nodejs-dev node-gyp libssl1.0-dev
+sudo apt-get install npm
+```
+
+Then, in this directory, run `npm install` to install dependencies.
+
 ## Available Scripts
 
 In the project directory, you can run:
