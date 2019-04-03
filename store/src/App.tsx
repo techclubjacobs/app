@@ -1,30 +1,22 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
-import { AppHeader, AppLink, AppLogo, AppWrapper } from "./styles/get-started-components";
-import { GlobalStyled } from "./styles/global";
+import { Route } from 'react-router-dom';
+
+import HomePage from './pages/Home';
+import BuyPage from './pages/Buy';
+import SellPage from './pages/Sell';
 
 class App extends Component<{}, {}> {
-  public render() {
-    return (
-      <AppWrapper>
-        <GlobalStyled/>
-        <AppHeader>
-          <AppLogo src={logo} alt="logo" />
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <AppLink
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </AppLink>
-        </AppHeader>
-      </AppWrapper>
-    );
-  }
+    public render() {
+        return (
+            <div>
+                <h1> Welcome to Jacobs Store</h1>
+
+                <Route exact path="/" component={HomePage} />
+                <Route path="/buy" component={BuyPage} />
+                <Route path="/sell" component={SellPage} />
+            </div>
+        );
+    }
 }
 
 export default App;
