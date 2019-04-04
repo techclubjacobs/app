@@ -1,0 +1,13 @@
+[
+    {
+      "product_id": 1,
+      "evcat_id": 23,
+      "seller_id": 123,
+      "title": "Books",
+      "price": 23,
+      "published": "12.25.18",
+      "active": "Yes",
+      "sold":"No",
+      "quantity" : 1
+    }
+]
