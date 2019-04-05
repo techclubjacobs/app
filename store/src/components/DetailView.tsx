@@ -26,6 +26,7 @@ class DetailView extends Component<{}, {}> {
           <button onClick={this.onOpenModal}>Click to view Details</button>
           <Modal open={open} onClose={this.onCloseModal} center>
           <h1> DETAILS OF ITEM </h1>
+            <img src={obj.image} alt=""></img>
             <h2>Product ID:{obj.product_id}</h2>
             <h2>Evcat ID:{obj.evcat_id}</h2>
             <h2>Seller ID:{obj.seller_id}</h2>
