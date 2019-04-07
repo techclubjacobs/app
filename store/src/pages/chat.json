@@ -1,0 +1,46 @@
+{
+    "sender_id": "17",
+    "receiver_id": "5",
+    "messages": [
+        {
+            "text": "Hello world",
+            "timestamp": "2019-04-07T14:01:50+00:00",
+            "is_me": true
+        },
+        {
+            "text": "Hello world 2",
+            "timestamp": "2019-04-07T14:05:50+00:00",
+            "is_me": true
+        },
+        {
+            "text": "Cool",
+            "timestamp": "2019-04-07T14:06:23+00:00",
+            "is_me": false
+        },
+        {
+            "text": "Cool 2",
+            "timestamp": "2019-04-07T14:12:00+00:00",
+            "is_me": true
+        },
+        {
+            "text": "Done",
+            "timestamp": "2019-04-07T14:20:11+00:00",
+            "is_me": false
+        },
+        {
+            "text": "New session sometimes later",
+            "timestamp": "2019-04-15T08:02:10+00:00",
+            "is_me": true
+        },
+        {
+            "text": "Hello world",
+            "timestamp": "2019-04-15T08:10:22+00:00",
+            "is_me": false
+        },
+        {
+            "text": "Bye",
+            "timestamp": "2019-04-15T09:04:03+00:00",
+            "is_me": false
+        }
+    ]
+}
