@@ -32,8 +32,13 @@ class CreateView extends Component<{}, MyState> {
         var category = this.state.catValue
         var price = this.state.priceValue
         var quantity = this.state.quantityValue
-        var result = "Ttile: " + title + " Price: " + price + "Quantity: " + quantity
+        if (price>0 && quantity>0){
+            var result = "Ttile: " + title + " Price: " + price + "Quantity: " + quantity
         alert(result);
+        }
+        else {
+            alert("Bad input")
+        }
         
     }
     handleTitleChange(e:any){
@@ -45,10 +50,12 @@ class CreateView extends Component<{}, MyState> {
         
     }
     handlePriceChange(e:any){
+    
         this.setState({priceValue: e.target.value});
         
     }
     handleQuantityChange(e:any){
+       
         this.setState({quantityValue: e.target.value});
         
     }
