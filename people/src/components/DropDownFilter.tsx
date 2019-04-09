@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 
-type Props = {
+interface IProps {
     elements: string[];
 }
 
-class DropDownFilter extends Component<Props, {}> {
+class DropDownFilter extends Component<IProps, {}> {
   public render() {
     return (
         <div>
