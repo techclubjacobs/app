@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-
-import GridView from '../components/GridView';
-import DetailView from '../components/DetailView';
+import DetailView from "../components/DetailView";
+import GridView from "../components/GridView";
 
 class BuyPage extends Component<{}, {}> {
     public render() {

@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import { Route } from 'react-router-dom';
-
-import HomePage from './pages/Home';
-import BuyPage from './pages/Buy';
-import SellPage from './pages/Sell';
+import { Route } from "react-router-dom";
+import BuyPage from "./pages/Buy";
+import HomePage from "./pages/Home";
+import SellPage from "./pages/Sell";
 
 class App extends Component<{}, {}> {
     public render() {

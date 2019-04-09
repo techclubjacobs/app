@@ -1,31 +1,31 @@
 import React, { Component } from "react";
 
-type Props = {
+interface IProps {
     default: string;
     alternative: string;
 }
 
 const divStyle = {
-    display: 'inline'
-}
+    display: "inline",
+};
 
 const buttonStyle = {
+    border: "1px solid black",
+    display: "inline",
+    margin: 10,
     padding: 5,
-    margin: 10, 
-    display: 'inline', 
-    border: '1px solid black'
-}
+};
 
-class BinaryFilterButton extends Component<Props, {}> {
+class BinaryFilterButton extends Component<IProps, {}> {
 
-    state = {
-        clicked: false
+    public state = {
+        clicked: false,
     };
 
-    buttonclick() {
+    public buttonclick() {
         this.setState({
             ...this.state,
-            clicked: !this.state.clicked
+            clicked: !this.state.clicked,
         });
     }
 
