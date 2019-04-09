@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 
-type Props = {
+interface IProps {
     options: string[];
 }
 
-class CheckboxFilter extends Component<Props, {}> {
+class CheckboxFilter extends Component<IProps, {}> {
   public render() {
     return (
         <div>

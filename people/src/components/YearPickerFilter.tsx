@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 
-type Props = {
+interface IProps {
     years: number[];
 }
 
-class YearPickerFilter extends Component<Props, {}> {
+class YearPickerFilter extends Component<IProps, {}> {
   public render() {
     return (
         <div>

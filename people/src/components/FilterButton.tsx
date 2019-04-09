@@ -1,30 +1,30 @@
 import React, { Component } from "react";
 
-type Props = {
+interface IProps {
     title: string;
 }
 
 const divStyle = {
-    display: 'inline'
-}
+    display: "inline",
+};
 
 const buttonStyle = {
+    border: "1px solid black",
+    display: "inline",
+    margin: 10,
     padding: 5,
-    margin: 10, 
-    display: 'inline', 
-    border: '1px solid black'
-}
+};
 
-class FilterButton extends Component<Props, {}> {
+class FilterButton extends Component<IProps, {}> {
 
-    state = {
-        show: false
+    public state = {
+        show: false,
     };
 
-    buttonclick() {
+    public buttonclick() {
         this.setState({
             ...this.state,
-            show: !this.state.show
+            show: !this.state.show,
         });
     }
 
