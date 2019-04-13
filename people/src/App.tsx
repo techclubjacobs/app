@@ -13,7 +13,9 @@ class App extends Component<{}, {}> {
   public render() {
     return (
       <AppWrapper>
-        <SearchBar></SearchBar>
+        <div style={{ width: "50%", margin: "0 auto" }}>
+          <SearchBar></SearchBar>
+        </div>
 
         <BinaryFilterButton default="active" alternative="inactive" />
 
