@@ -8,12 +8,12 @@
             "is_me": true
         },
         {
-            "text": "Hello world 2",
+            "text": "Hello, what's up?",
             "timestamp": "2019-04-07T14:05:50+00:00",
             "is_me": true
         },
         {
-            "text": "Cool",
+            "text": "Cool. Yours?",
             "timestamp": "2019-04-07T14:06:23+00:00",
             "is_me": false
         },
@@ -33,12 +33,12 @@
             "is_me": true
         },
         {
-            "text": "Hello world",
+            "text": "Hello world! You there?",
             "timestamp": "2019-04-15T08:10:22+00:00",
-            "is_me": false
+            "is_me": true
         },
         {
-            "text": "Bye",
+            "text": "Sorry! I don't have time. Bye",
             "timestamp": "2019-04-15T09:04:03+00:00",
             "is_me": false
         }
