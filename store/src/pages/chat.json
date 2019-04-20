@@ -41,6 +41,11 @@
             "text": "Sorry! I don't have time. Bye",
             "timestamp": "2019-04-15T09:04:03+00:00",
             "is_me": false
+        },
+        {
+            "text": "Okay.Bye",
+            "timestamp": "2019-04-15T09:04:09+00:00",
+            "is_me": true
         }
     ]
 }
