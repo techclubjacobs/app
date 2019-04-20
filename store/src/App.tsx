@@ -10,7 +10,7 @@ class App extends Component<{}, {}> {
     public render() {
         return (
             <div>
-                <h1> Welcome to Jacobs Store</h1>
+                <h1> Welcome to Jacobs Store! </h1>
 
                 <Route exact path="/" component={HomePage} />
                 <Route path="/buy" component={BuyPage} />
