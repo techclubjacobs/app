@@ -42,14 +42,15 @@ class GridCard extends Component<{}, {}> {
     }
   ]
 
+  /*
   public state = {
-    spacing: '12',
-    gridCount: '2'
+    spacing: '12'
   };
-
+  */
+ 
   public render() {
     const { classes }: any = this.props;
-    const { spacing } = this.state;
+    //const { spacing } = this.state;
 
     return (
       <Grid container style={gridStyle} className={classes.root} spacing={16}>
