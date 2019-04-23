@@ -27,6 +27,21 @@ const styles = (theme: any) => ({
 });
 
 class GridCard extends Component<{}, {}> {
+  public people = [
+    {
+      'firstname': 'Freshie',
+      'lastname': 'McFreshface'
+    },
+    {
+      'firstname': 'Another',
+      'lastname': 'One'
+    },
+    {
+      'firstname': 'Last',
+      'lastname': 'One'
+    }
+  ]
+
   public state = {
     spacing: '12',
     gridCount: '2'
@@ -39,16 +54,16 @@ class GridCard extends Component<{}, {}> {
     return (
       <Grid container style={gridStyle} className={classes.root} spacing={16}>
         <Grid item xs={12}>
-          <Grid container className={classes.test} justify="center" spacing={16}>
-          {[1,2,3,4,5,6,7,8,9,10].map(value => (
-            <Grid key={value} item>
-              <Paper className={classes.paper}>
-              <ListItemAvatar>
-                  <Avatar alt="Avatar" src="default_profile.gif" style={avatarStyle} />
-              </ListItemAvatar>
-              </Paper>
-            </Grid>
-          ))}
+          <Grid container className={classes.gridCards} justify="center" spacing={16}>
+            {this.people.map((person, index) => (
+              <Grid key={index} item>
+                <Paper className={classes.paper}>
+                  <ListItemAvatar>
+                    <Avatar alt="Avatar" src="default_profile.gif" style={avatarStyle} />
+                  </ListItemAvatar>
+                </Paper>
+              </Grid>
+            ))}
           </Grid>
         </Grid>
       </Grid>
