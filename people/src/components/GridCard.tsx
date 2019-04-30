@@ -1,6 +1,5 @@
-import { Avatar, List, ListItem, ListItemAvatar, Grid, Paper } from "@material-ui/core";
+import { Avatar, ListItemAvatar, Grid, Paper, CardActionArea } from "@material-ui/core";
 import { withStyles } from "@material-ui/core/styles";
-import classNames from "classnames";
 import React, { Component } from "react";
 
 const gridStyle = {
@@ -42,15 +41,8 @@ class GridCard extends Component<{}, {}> {
     }
   ]
 
-  /*
-  public state = {
-    spacing: '12'
-  };
-  */
- 
   public render() {
     const { classes }: any = this.props;
-    //const { spacing } = this.state;
 
     return (
       <Grid container style={gridStyle} className={classes.root} spacing={16}>
@@ -58,11 +50,13 @@ class GridCard extends Component<{}, {}> {
           <Grid container className={classes.gridCards} justify="center" spacing={16}>
             {this.people.map((person, index) => (
               <Grid key={index} item>
-                <Paper className={classes.paper}>
-                  <ListItemAvatar>
-                    <Avatar alt="Avatar" src="default_profile.gif" style={avatarStyle} />
-                  </ListItemAvatar>
-                </Paper>
+                <CardActionArea>
+                  <Paper className={classes.paper}>
+                    <ListItemAvatar>
+                      <Avatar alt="Avatar" src="default_profile.gif" style={avatarStyle} />
+                    </ListItemAvatar>
+                  </Paper>
+                </CardActionArea>
               </Grid>
             ))}
           </Grid>
