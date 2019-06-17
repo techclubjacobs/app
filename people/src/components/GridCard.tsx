@@ -13,15 +13,15 @@ const avatarStyle = {
 };
 
 const styles = (theme: any) => ({
-  root: {
-    flexGrow: 1,
+  control: {
+    padding: theme.spacing.unit * 2,
   },
   paper: {
     height: 100,
     width: 100,
   },
-  control: {
-    padding: theme.spacing.unit * 2,
+  root: {
+    flexGrow: 1,
   },
 });
 
@@ -38,8 +38,8 @@ class GridCard extends Component<{}, {}> {
     {
       firstname: "Last",
       lastname: "One",
-    }
-  ]
+    },
+  ];
 
   public render() {
     const { classes }: any = this.props;
