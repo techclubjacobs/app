@@ -1,4 +1,4 @@
-import { Avatar, ListItemAvatar, Grid, Paper, CardActionArea } from "@material-ui/core";
+import { Avatar, CardActionArea, Grid, ListItemAvatar, Paper } from "@material-ui/core";
 import { withStyles } from "@material-ui/core/styles";
 import React, { Component } from "react";
 
@@ -28,16 +28,16 @@ const styles = (theme: any) => ({
 class GridCard extends Component<{}, {}> {
   public people = [
     {
-      'firstname': 'Freshie',
-      'lastname': 'McFreshface'
+      firstname: "Freshie",
+      lastname: "McFreshface",
     },
     {
-      'firstname': 'Another',
-      'lastname': 'One'
+      firstname: "Another",
+      lastname: "One",
     },
     {
-      'firstname': 'Last',
-      'lastname': 'One'
+      firstname: "Last",
+      lastname: "One",
     }
   ]
 
