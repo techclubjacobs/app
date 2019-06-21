@@ -1,4 +1,5 @@
-import { Avatar, List, ListItem, ListItemAvatar, ListItemText, Table, TableBody, TableCell, TableHead, TableRow, Typography } from "@material-ui/core";
+import { Avatar, List, ListItem, ListItemAvatar, ListItemText, Table,
+  TableBody, TableCell, TableRow, Typography } from "@material-ui/core";
 import React, { Component } from "react";
 
 const tableStyle = {
@@ -34,11 +35,11 @@ class ListCard extends Component<{}, {}> {
             primary="Freshie McFreshface"
             secondary={
               <React.Fragment>
-                <Typography 
-                    component="span" 
-                    variant="caption" 
-                    color="textPrimary" 
-                    style={{ marginBottom:20 }}>                    
+                <Typography
+                    component="span"
+                    variant="caption"
+                    color="textPrimary"
+                    style={{ marginBottom: 20 }}>
                       f.mcfreshface@jacobs-university.de
                 </Typography>
 
