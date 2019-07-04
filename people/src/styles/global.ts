@@ -9,6 +9,8 @@ export const GlobalStyled = createGlobalStyle`
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    font-size: 62.5%;
   }
 
   code {
