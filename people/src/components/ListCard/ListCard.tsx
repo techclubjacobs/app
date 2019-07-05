@@ -1,69 +1,54 @@
 import React, { Component } from 'react'
 import { Typography } from '@material-ui/core'
 import { 
-  ListCardGrid, ListCardContainer, 
+  ListCardContainer, 
   ListCardContent, ListCardMedia,
-  ListCardSubContainer, ListCardContentContainer
+  ListCardContentContainer, InfoColumn,
+  PersonInfoContent
 } from './ListCardStyles'
 import profilePic from '../../taiyr.png'
 
-const people = [
-  {
-    name: "Taiyr Begeyev",
-    email: "t.begeyev@jacobs-university.de",
-    college: "Krupp",
-    room: "KC-113",
-    major: "CS",
-    class: "2021"
-  },
-  {
-    name: "Taiyr Begeyev",
-    email: "t.begeyev@jacobs-university.de",
-    college: "Krupp",
-    room: "KC-113",
-    major: "CS",
-    class: "2021"
-  },
-  {
-    name: "Taiyr Begeyev",
-    email: "t.begeyev@jacobs-university.de",
-    college: "Krupp",
-    room: "KC-113",
-    major: "CS",
-    class: "2021"
-  }
-]
-
-class ListCard extends Component<{}, {}> {
+class ListCard extends Component<{person: any}, {}> {
   public render() {
+    const {person} = this.props
     return (
-       <React.Fragment>
-         <ListCardGrid container spacing={8}>
-          {
-            people.map(person => (
-              <ListCardGrid item key={person.email} xs={12}>
-                <ListCardContainer>
-                  <ListCardSubContainer>
-                    <ListCardMedia 
-                      image={profilePic}
-                    />
-                    <ListCardContentContainer>
-                      <ListCardContent>
-                        <Typography
-                          component="h2" variant="h5"
-                        >
-                          {person.name}
-                        </Typography>
-                        <Typography></Typography>
-                      </ListCardContent>
-                    </ListCardContentContainer>
-                  </ListCardSubContainer>
-                </ListCardContainer>
-              </ListCardGrid>
-            ))
-          }
-         </ListCardGrid>
-       </React.Fragment>
+      <ListCardContainer>
+        <ListCardMedia 
+          image={profilePic}
+        />
+        <ListCardContentContainer>
+          <ListCardContent>
+            <Typography
+              component="h2" variant="h5"
+            >
+              {person.name}
+            </Typography>
+            <Typography
+              variant="subtitle1"
+            >
+              {person.email}
+            </Typography>
+          </ListCardContent>
+          <PersonInfoContent>
+            <InfoColumn>
+              <Typography>College</Typography>
+              <Typography>{person.college}</Typography>
+            </InfoColumn>
+            <InfoColumn>
+              <Typography>Lives In</Typography>
+              <Typography>{person.room}</Typography>
+            </InfoColumn>
+            <InfoColumn>
+              <Typography>Studies</Typography>
+              <Typography>{person.major}</Typography>
+            </InfoColumn>
+            <InfoColumn>
+              <Typography>Class Of</Typography>
+              <Typography>{person.class}</Typography>
+            </InfoColumn>
+          </PersonInfoContent>
+        </ListCardContentContainer>
+      </ListCardContainer>
     );
   }
 }
